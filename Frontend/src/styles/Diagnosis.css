@@ -1,0 +1,167 @@
+.diagnosis-page{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #050816 0%,
+        #0b1120 45%,
+        #162449 100%
+    );
+
+    padding:120px 7% 70px;
+
+}
+
+.diagnosis-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.diagnosis-title h1{
+
+    color:white;
+
+    font-size:3.3rem;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+.diagnosis-title p{
+
+    color:#94a3b8;
+
+    font-size:1.15rem;
+
+}
+
+.diagnosis-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+.left-panel,
+.right-panel{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.30);
+
+    transition:.35s;
+
+}
+
+.left-panel:hover,
+.right-panel:hover{
+
+    border-color:#2563eb;
+
+    box-shadow:0 25px 55px rgba(37,99,235,.18);
+
+}
+
+.panel-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:28px;
+
+}
+
+.panel-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:1.4rem;
+
+    box-shadow:0 0 22px rgba(37,99,235,.45);
+
+}
+
+.panel-heading h2{
+
+    color:white;
+
+    font-size:1.6rem;
+
+    margin-bottom:4px;
+
+}
+
+.panel-heading p{
+
+    color:#94a3b8;
+
+    font-size:.95rem;
+
+}
+
+@media(max-width:1100px){
+
+.diagnosis-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.diagnosis-page{
+
+padding:100px 5% 40px;
+
+}
+
+.diagnosis-title h1{
+
+font-size:2.5rem;
+
+}
+
+.left-panel,
+.right-panel{
+
+padding:25px;
+
+}
+
+}

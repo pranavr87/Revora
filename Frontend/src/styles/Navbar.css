@@ -1,0 +1,230 @@
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(5,8,22,.75);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.navbar-container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.navbar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.navbar-logo img{
+
+    width:48px;
+
+    height:48px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 0 15px rgba(37,99,235,.55));
+
+}
+
+.navbar-logo h2{
+
+    color:white;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+}
+
+.navbar-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.navbar-links a,
+.navbar-links button{
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:#cbd5e1;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.navbar-links a::after,
+.navbar-links button::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#3b82f6;
+
+    transition:.3s;
+
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover{
+
+    color:white;
+
+}
+
+.navbar-links a:hover::after,
+.navbar-links button:hover::after{
+
+    width:100%;
+
+}
+
+.navbar-links .active{
+
+    color:#60a5fa;
+
+}
+
+.active-link{
+
+    color:#60a5fa;
+
+    font-weight:600;
+
+}
+
+.navbar-btn{
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.navbar-btn:hover{
+
+    background:#3b82f6;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 25px rgba(37,99,235,.45);
+
+}
+
+@media(max-width:900px){
+
+    .navbar-links{
+
+        display:none;
+
+    }
+
+    .navbar-btn{
+
+        display:none;
+
+    }
+
+    .navbar-logo h2{
+
+        font-size:1.7rem;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .navbar-container{
+
+        height:70px;
+
+    }
+
+    .navbar-logo img{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .navbar-logo h2{
+
+        font-size:1.5rem;
+
+    }
+
+}
