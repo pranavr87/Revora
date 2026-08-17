@@ -2,9 +2,11 @@ import os
 import tempfile
 from pathlib import Path
 
+# Use the browser installed inside the Python/Playwright environment
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "0"
+
 from playwright.sync_api import sync_playwright
 from jinja2 import Environment, FileSystemLoader
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
