@@ -2,6 +2,14 @@
 
 REVORA is a full-stack vehicle fault diagnosis system that identifies potential vehicle faults based on vehicle details and symptoms. It provides the probable fault, root cause, recommended solution, severity, estimated cost, repair time, and a premium PDF report.
 
+## 🚀 Live Demo
+
+🔗 **Live Demo:** https://revora-1.onrender.com
+
+📡 **Backend API:** https://revora-8kzq.onrender.com
+
+📚 **API Documentation:** https://revora-8kzq.onrender.com/docs
+
 ## 🛠️ Tech Stack
 
 * **Frontend:** React.js, Vite, JavaScript, CSS, Axios
