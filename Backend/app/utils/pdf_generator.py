@@ -117,13 +117,13 @@ def generate_pdf(data):
 
             margin={
 
-                "top": "20px",
+                "top": "10px",
 
-                "bottom": "20px",
+                "bottom": "10px",
 
-                "left": "20px",
+                "left": "10px",
 
-                "right": "20px"
+                "right": "10px"
 
             }
 
