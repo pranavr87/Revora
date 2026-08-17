@@ -90,7 +90,7 @@ def generate_pdf(data):
 
         page.set_viewport_size({
             "width": 1280,
-            "height": 1810
+            "height": 1810,
         })
 
         page.goto(
@@ -113,6 +113,7 @@ def generate_pdf(data):
             format="A4",
 
             print_background=True,
+
 
             margin={
 

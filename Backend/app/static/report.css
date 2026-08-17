@@ -1075,3 +1075,160 @@ color:#64748b;
 display:none;
 
 }
+/* ==========================================
+   PDF ONE PAGE OPTIMIZATION
+========================================== */
+
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #edf3fb;
+}
+
+.container {
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    border-radius: 18px;
+}
+
+/* Smaller header */
+.header {
+    padding: 25px 35px;
+}
+
+.logo {
+    width: 150px !important;
+    height: 145px !important;
+    min-width: 140px !important;
+    min-height: 140px !important;
+}
+
+.left {
+    gap: 20px;
+}
+
+.brand h1 {
+    font-size: 44px;
+}
+
+.brand p {
+    font-size: 17px;
+}
+
+.right {
+    margin-left: 25px;
+    padding: 12px 16px;
+}
+
+.right h3 {
+    font-size: 16px;
+}
+
+/* Feature bar */
+.feature-bar {
+    padding: 10px 15px;
+    gap: 12px;
+}
+
+.feature-bar span {
+    padding: 7px 14px;
+    font-size: 12px;
+}
+
+/* Main cards */
+.vehicle-card,
+.card,
+.note {
+    margin: 14px 25px 10px;
+    padding: 18px 22px;
+    border-radius: 16px;
+}
+
+.vehicle-card h2,
+.card h2,
+.note h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+}
+
+.card p,
+.note p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Vehicle information */
+.vehicle-grid {
+    gap: 12px;
+}
+
+.vehicle-grid div {
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.vehicle-grid label {
+    font-size: 10px;
+}
+
+.vehicle-grid h4 {
+    margin-top: 7px;
+    font-size: 16px;
+}
+
+/* Summary */
+.bottom-grid {
+    gap: 14px;
+    margin: 16px 25px;
+}
+
+.mini-card {
+    padding: 16px 12px;
+    border-radius: 15px;
+}
+
+.mini-card h3 {
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.mini-card p {
+    font-size: 19px;
+}
+
+.badge {
+    margin-top: 7px;
+    padding: 5px 10px;
+    font-size: 9px;
+}
+
+/* Recommendation */
+.note {
+    margin-top: 10px;
+    padding: 17px 22px;
+}
+
+.note p {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+/* Prevent unwanted page breaks */
+.header,
+.feature-bar,
+.vehicle-card,
+.card,
+.bottom-grid,
+.note,
+.report-end {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}

@@ -103,6 +103,8 @@ def fetch_search_results(keyword):
 
 
 from datetime import datetime
+from zoneinfo import ZoneInfo
+
 
 def fetch_pdf_report(brand, model, symptom):
 
@@ -112,13 +114,12 @@ def fetch_pdf_report(brand, model, symptom):
         return None
 
     diagnosis["brand"] = brand
-
     diagnosis["model"] = model
 
     diagnosis["user_input"] = symptom.replace("_", " ").title()
 
-    diagnosis["generated_on"] = datetime.now().strftime(
-        "%d %b %Y %I:%M %p"
-    )
+    diagnosis["generated_on"] = datetime.now(
+        ZoneInfo("Asia/Kolkata")
+    ).strftime("%d %b %Y %I:%M %p")
 
     return generate_pdf(diagnosis)
